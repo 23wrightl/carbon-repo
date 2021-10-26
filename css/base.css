@@ -927,5 +927,9 @@ textarea {
 #pronounciation{
     font-size: 15pt;
 }
+#learning-header{
+    font-size: 45px;
+    text-align:center;
+}
 
 /*# sourceMappingURL=base.css.map */
