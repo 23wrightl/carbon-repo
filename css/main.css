@@ -1454,6 +1454,18 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     transform: translateY(-50%);
     z-index: 501;
 }
+.header-logo-articles {
+    display: inline-block;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 40px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 501;
+}
 
 .header-logo a {
     display: block;
@@ -1466,7 +1478,17 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-
+.header-logo-articles a {
+    display: block;
+    margin: 9px 0 0 0;
+    padding: 0;
+    padding-top:10px;
+    outline: 0;
+    border: none;
+    width: 150px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
 
 /* ------------------------------------------------------------------- 
  * ## main navigation 
@@ -2376,7 +2398,7 @@ html.no-csstransitions .home-content__main {
     position: relative;
 }
 * {box-sizing: border-box}
-.mySlides1, .mySlides2 {display: none}
+.mySlides1, .mySlides2, .mySlides3 {display: none}
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -2390,7 +2412,7 @@ img {vertical-align: middle;}
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 120%;
+  top: 105%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -2413,6 +2435,23 @@ img {vertical-align: middle;}
   background-color: #959595;
   color: #4f4f4f;
 }
+
+.article-subtitle{
+    color:#333333;
+    padding-top:40px;
+    font-size: 25pt;
+}
+.article-author{
+    font-size: 12pt;
+}
+.article-cite{
+    float: right;
+    margin-right:10%;
+}
+.article-main-text{
+    margin-left:10%;
+}
+
 
 /* ------------------------------------------------------------------- 
  * ## services list
@@ -2446,6 +2485,17 @@ img {vertical-align: middle;}
     color: #39b54a;
     font-size: 4.8rem;
     margin-top: -.6rem;
+}
+.service-icon-articles{
+    float: left;
+    color: #39b54a;
+    font-size: 6.7rem;
+    margin-top: -.6rem;
+    padding-left:30px;
+    padding-top:30px;
+}
+.text1title{
+    font-size: 14pt;
 }
 
 
@@ -2497,6 +2547,14 @@ img {vertical-align: middle;}
         font-size: 4.5rem;
         float: none;
         margin-top: 0;
+    }
+    .service-icon-articles{
+        font-size: 4.5rem;
+        float: none;
+        margin-top: 0;
+    }
+    .article-subtitle{
+        font-size: 15pt;
     }
 }
 
