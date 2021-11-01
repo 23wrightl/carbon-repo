@@ -2398,7 +2398,7 @@ html.no-csstransitions .home-content__main {
     position: relative;
 }
 * {box-sizing: border-box}
-.mySlides1, .mySlides2, .mySlides3 {display: none}
+.mySlides1, .mySlides2, .mySlides3, .mySlides4 {display: none}
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -2439,7 +2439,7 @@ img {vertical-align: middle;}
 .article-subtitle{
     color:#333333;
     padding-top:40px;
-    font-size: 25pt;
+    font-size: 20pt;
 }
 .article-author{
     font-size: 12pt;
@@ -2451,7 +2451,16 @@ img {vertical-align: middle;}
 .article-main-text{
     margin-left:10%;
 }
-
+.article{
+    margin-left:15%;
+    margin-right:15%;
+}
+.quiz-descript{
+    color:#333333;
+    padding-top:40px;
+    font-size: 15pt;
+    font-family: "lora-regular", serif;
+}
 
 /* ------------------------------------------------------------------- 
  * ## services list

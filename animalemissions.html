@@ -10,7 +10,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>EnviroAge Quiz</title>
+    <title>EnviroAge How Animals Contribute to Carbon Emissions</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -105,88 +105,12 @@
                         <i class="icon-group"></i>
                     </div>
                 </div>
-                <h6 class="quiz-descript" data-aos="fade-up">Try our quiz!</h6>
-                <span>This is some description about how amazing this quiz is.</span>
+                <div class="article-subtitle" data-aos="fade-up">Let's Take a Tour of a Farm!</div>
+                <span class="article-author" data-aos="fade-up">Jane Spelman</span>
+                <div class="article-cite" data-aos="fade-up">Published:--/--/----</div>
             </div>
             <br>
-            <div style='transform: scale(0.65); position: relative; top: -100px;'>
-                <h3>What are Earthworms?</h3>
-                <p>Choose 1 answer</p>
-                <hr />
-              
-                <div id='block-11' style='padding: 10px;'>
-                  <label for='option-11' style=' padding: 5px; font-size: 2.5rem;'>
-                    <input type='radio' name='option' value='Decomposers' id='option-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                    Decomposers</label>
-                  <span id='result-11'></span>
-                </div>
-                <hr />
-              
-                <div id='block-12' style='padding: 10px;'>
-                  <label for='option-12' style=' padding: 5px; font-size: 2.5rem;'>
-                    <input type='radio' name='option' value='Consumers' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                    Consumers</label>
-                  <span id='result-12'></span>
-                </div>
-                <hr />
-              
-                <div id='block-13' style='padding: 10px;'>
-                  <label for='option-13' style=' padding: 5px; font-size: 2.5rem;'>
-                    <input type='radio' name='option' value='Producers' id='option-13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                    Producers</label>
-                  <span id='result-13'></span>
-                </div>
-                <hr />
-              
-                <div id='block-14' style='padding: 10px;'>
-                  <label for='option-14' style=' padding: 5px; font-size: 2.5rem;'>
-                    <input type='radio' name='option' value='none' id='option-14' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                    None of the above<label>
-                  <span id='result-14'></span>
-                </div>
-                <hr />
-                <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px;'>Submit</button>
-              </div>
-              <a id='showanswer1'></a>
-              <div style='transform: scale(0.65); position: relative; top: -100px;'>
-                <h3>What are Earthworms?</h3>
-                <p>Choose 1 answer</p>
-                <hr />
-              
-                <div id='block-11' style='padding: 10px;'>
-                  <label for='option-11' style=' padding: 5px; font-size: 2.5rem;'>
-                    <input type='radio' name='option' value='Decomposers' id='option-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                    Decomposers</label>
-                  <span id='result-11'></span>
-                </div>
-                <hr />
-              
-                <div id='block-12' style='padding: 10px;'>
-                  <label for='option-12' style=' padding: 5px; font-size: 2.5rem;'>
-                    <input type='radio' name='option' value='Consumers' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                    Consumers</label>
-                  <span id='result-12'></span>
-                </div>
-                <hr />
-              
-                <div id='block-13' style='padding: 10px;'>
-                  <label for='option-13' style=' padding: 5px; font-size: 2.5rem;'>
-                    <input type='radio' name='option' value='Producers' id='option-13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                    Producers</label>
-                  <span id='result-13'></span>
-                </div>
-                <hr />
-              
-                <div id='block-14' style='padding: 10px;'>
-                  <label for='option-14' style=' padding: 5px; font-size: 2.5rem;'>
-                    <input type='radio' name='option' value='none' id='option-14' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                    None of the above<label>
-                  <span id='result-14'></span>
-                </div>
-                <hr />
-                <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px;'>Submit</button>
-              </div>
-              <a id='showanswer1'></a>
+            <div class="article-main-text" data-aos="fade-up">This is some text blah blah blah...</div>
         </div>
     </section>
     <!-- end article content -->
@@ -299,49 +223,6 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        //    The function evaluates the answer and displays result
-        function displayAnswer1() {
-          if (document.getElementById('option-11').checked) {
-            document.getElementById('block-11').style.border = '3px solid limegreen'
-            document.getElementById('result-11').style.color = 'limegreen'
-            document.getElementById('result-11').innerHTML = 'Correct!'
-          }
-          if (document.getElementById('option-12').checked) {
-            document.getElementById('block-12').style.border = '3px solid red'
-            document.getElementById('result-12').style.color = 'red'
-            document.getElementById('result-12').innerHTML = 'Incorrect!'
-            showCorrectAnswer1()
-          }
-          if (document.getElementById('option-13').checked) {
-            document.getElementById('block-13').style.border = '3px solid red'
-            document.getElementById('result-13').style.color = 'red'
-            document.getElementById('result-13').innerHTML = 'Incorrect!'
-            showCorrectAnswer1()
-          }
-          if (document.getElementById('option-14').checked) {
-            document.getElementById('block-14').style.border = '3px solid red'
-            document.getElementById('result-14').style.color = 'red'
-            document.getElementById('result-14').innerHTML = 'Incorrect!'
-            showCorrectAnswer1()
-          }
-        }
-        // the functon displays the link to the correct answer
-        function showCorrectAnswer1() {
-          let showAnswer1 = document.createElement('p')
-          showAnswer1.innerHTML = 'Show Corrent Answer'
-          showAnswer1.style.position = 'relative'
-          showAnswer1.style.top = '-180px'
-          showAnswer1.style.fontSize = '1.75rem'
-          document.getElementById('showanswer1').appendChild(showAnswer1)
-          showAnswer1.addEventListener('click', () => {
-            document.getElementById('block-11').style.border = '3px solid limegreen'
-            document.getElementById('result-11').style.color = 'limegreen'
-            document.getElementById('result-11').innerHTML = 'Correct!'
-            document.getElementById('showanswer1').removeChild(showAnswer1)
-          })
-        }
-      </script>
     
 
 </body>
