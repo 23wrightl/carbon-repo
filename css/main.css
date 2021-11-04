@@ -2408,6 +2408,10 @@ img {vertical-align: middle;}
   margin: auto;
 }
 
+.text1title:hover{
+    color: #959595;
+}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -2450,6 +2454,8 @@ img {vertical-align: middle;}
 }
 .article-main-text{
     margin-left:10%;
+    font-size:15pt;
+    font-family: "lora-regular", serif;
 }
 .article{
     margin-left:15%;
@@ -2460,6 +2466,24 @@ img {vertical-align: middle;}
     padding-top:40px;
     font-size: 15pt;
     font-family: "lora-regular", serif;
+}
+.article-left-img{
+    float: left;
+    padding-right: 20px;
+}
+.article-right-img{
+    float: right;
+    padding-left: 20px;
+}
+.article-fact{
+    text-align: center;
+}
+.article-fact-small{
+    text-align: center;
+    font-size: 12pt;
+}
+.article-list{
+    padding-left:30px;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2757,6 +2781,9 @@ img {vertical-align: middle;}
 .item-folio__project-link:active {
     background-color: #FFFFFF;
     color: #000000;
+}
+#test{
+    display:none;
 }
 
 /* on hover 

@@ -100,93 +100,437 @@
         <img src="/images/portfolio/woodcraft.jpg" style="width: 100%;height: 400px;">
         <div class="article">
             <div>
-                <div class="col-block service-item" data-aos="fade-up">
+                <div class="col-block service-item">
                     <div class="service-icon-articles">
                         <i class="icon-group"></i>
                     </div>
                 </div>
-                <h6 class="quiz-descript" data-aos="fade-up">Try our quiz!</h6>
+                <h6 class="quiz-descript">Try our quiz!</h6>
                 <span>This is some description about how amazing this quiz is.</span>
             </div>
             <br>
-            <div style='transform: scale(0.65); position: relative; top: -100px;'>
-                <h3>What are Earthworms?</h3>
-                <p>Choose 1 answer</p>
-                <hr />
-              
-                <div id='block-11' style='padding: 10px;'>
-                  <label for='option-11' style=' padding: 5px; font-size: 2.5rem;'>
-                    <input type='radio' name='option' value='Decomposers' id='option-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                    Decomposers</label>
-                  <span id='result-11'></span>
-                </div>
-                <hr />
-              
-                <div id='block-12' style='padding: 10px;'>
-                  <label for='option-12' style=' padding: 5px; font-size: 2.5rem;'>
-                    <input type='radio' name='option' value='Consumers' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                    Consumers</label>
-                  <span id='result-12'></span>
-                </div>
-                <hr />
-              
-                <div id='block-13' style='padding: 10px;'>
-                  <label for='option-13' style=' padding: 5px; font-size: 2.5rem;'>
-                    <input type='radio' name='option' value='Producers' id='option-13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                    Producers</label>
-                  <span id='result-13'></span>
-                </div>
-                <hr />
-              
-                <div id='block-14' style='padding: 10px;'>
-                  <label for='option-14' style=' padding: 5px; font-size: 2.5rem;'>
-                    <input type='radio' name='option' value='none' id='option-14' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                    None of the above<label>
-                  <span id='result-14'></span>
-                </div>
-                <hr />
-                <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px;'>Submit</button>
-              </div>
-              <a id='showanswer1'></a>
-              <div style='transform: scale(0.65); position: relative; top: -100px;'>
-                <h3>What are Earthworms?</h3>
-                <p>Choose 1 answer</p>
-                <hr />
-              
-                <div id='block-11' style='padding: 10px;'>
-                  <label for='option-11' style=' padding: 5px; font-size: 2.5rem;'>
-                    <input type='radio' name='option' value='Decomposers' id='option-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                    Decomposers</label>
-                  <span id='result-11'></span>
-                </div>
-                <hr />
-              
-                <div id='block-12' style='padding: 10px;'>
-                  <label for='option-12' style=' padding: 5px; font-size: 2.5rem;'>
-                    <input type='radio' name='option' value='Consumers' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                    Consumers</label>
-                  <span id='result-12'></span>
-                </div>
-                <hr />
-              
-                <div id='block-13' style='padding: 10px;'>
-                  <label for='option-13' style=' padding: 5px; font-size: 2.5rem;'>
-                    <input type='radio' name='option' value='Producers' id='option-13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                    Producers</label>
-                  <span id='result-13'></span>
-                </div>
-                <hr />
-              
-                <div id='block-14' style='padding: 10px;'>
-                  <label for='option-14' style=' padding: 5px; font-size: 2.5rem;'>
-                    <input type='radio' name='option' value='none' id='option-14' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
-                    None of the above<label>
-                  <span id='result-14'></span>
-                </div>
-                <hr />
-                <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px;'>Submit</button>
-              </div>
-              <a id='showanswer1'></a>
+            <table>
+                <tr>
+                    <td> <!--Question 1-->
+                        <div style='transform: scale(0.65); position: relative; top: -100px;'>
+                        <h3>What are Earthworms?</h3>
+                        <p>Choose 1 answer</p>
+                        <hr />
+                        
+                        <div id='block-11' style='padding: 10px;'>
+                            <label for='option-11' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option' value='Decomposers' id='option-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Decomposers</label>
+                            <span id='result-11'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-12' style='padding: 10px;'>
+                            <label for='option-12' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option' value='Consumers' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Consumers</label>
+                            <span id='result-12'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-13' style='padding: 10px;'>
+                            <label for='option-13' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option' value='Producers' id='option-13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Producers</label>
+                            <span id='result-13'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-14' style='padding: 10px;'>
+                            <label for='option-14' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option' value='none' id='option-14' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            None of the above<label>
+                            <span id='result-14'></span>
+                        </div>
+                        <hr />
+                        <button type='button' onclick='displayAnswer1()' style='width: 130px; height: 60px; border-radius: 3px;'>Submit</button>
+                        </div>
+                        <a id='showanswer1'></a>
+                    </td>
+                    <td> <!--Question 2-->
+                        <div style='transform: scale(0.65); position: relative; top: -100px;'>
+                        <h3>Question 2</h3>
+                        <p>Choose 1 answer</p>
+                        <hr />
+                        
+                        <div id='block-15' style='padding: 10px;'>
+                            <label for='option-15' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option2' value='answer1' id='option-15' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 1</label>
+                            <span id='result-15'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-16' style='padding: 10px;'>
+                            <label for='option-16' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option2' value='answer2' id='option-16' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 2</label>
+                            <span id='result-16'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-17' style='padding: 10px;'>
+                            <label for='option-17' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option2' value='answer3' id='option-17' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 3 (C)</label>
+                            <span id='result-17'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-18' style='padding: 10px;'>
+                            <label for='option-18' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option2' value='answer4' id='option-18' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 4<label>
+                            <span id='result-18'></span>
+                        </div>
+                        <hr />
+                        <button type='button' onclick='displayAnswer2()' style='width: 130px; height: 60px; border-radius: 3px;'>Submit</button>
+                        </div>
+                        <a id='showanswer2'></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <!--Question 3-->
+                        <div style='transform: scale(0.65); position: relative; top: -100px;'>
+                        <h3>Question 3</h3>
+                        <p>Choose 1 answer</p>
+                        <hr />
+                        
+                        <div id='block-19' style='padding: 10px;'>
+                            <label for='option-19' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option3' value='answer1' id='option-19' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 1</label>
+                            <span id='result-19'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-20' style='padding: 10px;'>
+                            <label for='option-20' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option3' value='answer2' id='option-20' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 2 (C)</label>
+                            <span id='result-20'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-21' style='padding: 10px;'>
+                            <label for='option-21' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option3' value='answer3' id='option-21' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 3</label>
+                            <span id='result-21'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-22' style='padding: 10px;'>
+                            <label for='option-22' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option3' value='answer4' id='option-22' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 4<label>
+                            <span id='result-22'></span>
+                        </div>
+                        <hr />
+                        <button type='button' onclick='displayAnswer3()' style='width: 130px; height: 60px; border-radius: 3px;'>Submit</button>
+                        </div>
+                        <a id='showanswer3'></a>
+                    </td>
+                    <td> <!--Question 4-->
+                        <div style='transform: scale(0.65); position: relative; top: -100px;'>
+                        <h3>Question 4</h3>
+                        <p>Choose 1 answer</p>
+                        <hr />
+                        
+                        <div id='block-23' style='padding: 10px;'>
+                            <label for='option-23' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option4' value='Your mom' id='option-23' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 1</label>
+                            <span id='result-23'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-24' style='padding: 10px;'>
+                            <label for='option-24' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option4' value='My dad' id='option-24' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 2 (C)</label>
+                            <span id='result-24'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-25' style='padding: 10px;'>
+                            <label for='option-25' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option4' value='Ben Franklin' id='option-25' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 3</label>
+                            <span id='result-25'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-26' style='padding: 10px;'>
+                            <label for='option-26' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option4' value='Mrs Milesky' id='option-26' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 4<label>
+                            <span id='result-26'></span>
+                        </div>
+                        <hr />
+                        <button type='button' onclick='displayAnswer4()' style='width: 130px; height: 60px; border-radius: 3px;'>Submit</button>
+                        </div>
+                        <a id='showanswer4'></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <!--Question 5-->
+                        <div style='transform: scale(0.65); position: relative; top: -100px;'>
+                        <h3>Question 5</h3>
+                        <p>Choose 1 answer</p>
+                        <hr />
+                        
+                        <div id='block-27' style='padding: 10px;'>
+                            <label for='option-27' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option5' value='Decomposers' id='option-27' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 1</label>
+                            <span id='result-27'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-28' style='padding: 10px;'>
+                            <label for='option-28' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option5' value='Consumers' id='option-28' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 2</label>
+                            <span id='result-28'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-29' style='padding: 10px;'>
+                            <label for='option-29' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option5' value='Producers' id='option-29' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 3</label>
+                            <span id='result-29'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-30' style='padding: 10px;'>
+                            <label for='option-30' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option5' value='none' id='option-30' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 4 (C)<label>
+                            <span id='result-30'></span>
+                        </div>
+                        <hr />
+                        <button type='button' onclick='displayAnswer5()' style='width: 130px; height: 60px; border-radius: 3px;'>Submit</button>
+                        </div>
+                        <a id='showanswer5'></a>
+                    </td>
+                    <td> <!--Question 6-->
+                        <div style='transform: scale(0.65); position: relative; top: -100px;'>
+                        <h3>Question 6</h3>
+                        <p>Choose 1 answer</p>
+                        <hr />
+                        
+                        <div id='block-31' style='padding: 10px;'>
+                            <label for='option-31' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option6' value='answer1' id='option-31' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 1 (C)</label>
+                            <span id='result-31'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-32' style='padding: 10px;'>
+                            <label for='option-32' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option6' value='answer2' id='option-32' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 2</label>
+                            <span id='result-32'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-33' style='padding: 10px;'>
+                            <label for='option-33' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option6' value='answer3' id='option-33' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 3</label>
+                            <span id='result-33'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-34' style='padding: 10px;'>
+                            <label for='option-34' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option6' value='answer4' id='option-34' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 4<label>
+                            <span id='result-34'></span>
+                        </div>
+                        <hr />
+                        <button type='button' onclick='displayAnswer6()' style='width: 130px; height: 60px; border-radius: 3px;'>Submit</button>
+                        </div>
+                        <a id='showanswer6'></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <!--Question 7-->
+                        <div style='transform: scale(0.65); position: relative; top: -100px;'>
+                        <h3>Question 7</h3>
+                        <p>Choose 1 answer</p>
+                        <hr />
+                        
+                        <div id='block-35' style='padding: 10px;'>
+                            <label for='option-35' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option7' value='answer1' id='option-35' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 1 (C)</label>
+                            <span id='result-35'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-36' style='padding: 10px;'>
+                            <label for='option-36' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option7' value='answer2' id='option-36' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 2</label>
+                            <span id='result-36'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-37' style='padding: 10px;'>
+                            <label for='option-37' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option7' value='answer3' id='option-37' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 3</label>
+                            <span id='result-37'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-38' style='padding: 10px;'>
+                            <label for='option-38' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option7' value='answer4' id='option-38' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 4<label>
+                            <span id='result-38'></span>
+                        </div>
+                        <hr />
+                        <button type='button' onclick='displayAnswer7()' style='width: 130px; height: 60px; border-radius: 3px;'>Submit</button>
+                        </div>
+                        <a id='showanswer7'></a>
+                    </td>
+                    <td> <!--Question 8-->
+                        <div style='transform: scale(0.65); position: relative; top: -100px;'>
+                        <h3>Question 8</h3>
+                        <p>Choose 1 answer</p>
+                        <hr />
+                        
+                        <div id='block-39' style='padding: 10px;'>
+                            <label for='option-39' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option8' value='Your mom' id='option-39' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 1</label>
+                            <span id='result-39'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-40' style='padding: 10px;'>
+                            <label for='option-40' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option8' value='My dad' id='option-40' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 2</label>
+                            <span id='result-40'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-41' style='padding: 10px;'>
+                            <label for='option-41' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option8' value='Ben Franklin' id='option-41' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 3 (C)</label>
+                            <span id='result-41'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-42' style='padding: 10px;'>
+                            <label for='option-42' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option8' value='Mrs Milesky' id='option-42' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 4<label>
+                            <span id='result-42'></span>
+                        </div>
+                        <hr />
+                        <button type='button' onclick='displayAnswer8()' style='width: 130px; height: 60px; border-radius: 3px;'>Submit</button>
+                        </div>
+                        <a id='showanswer8'></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <!--Question 9-->
+                        <div style='transform: scale(0.65); position: relative; top: -100px;'>
+                        <h3>Question 9</h3>
+                        <p>Choose 1 answer</p>
+                        <hr />
+                        
+                        <div id='block-43' style='padding: 10px;'>
+                            <label for='option-43' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option9' value='answer1' id='option-43' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 1</label>
+                            <span id='result-43'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-44' style='padding: 10px;'>
+                            <label for='option-44' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option9' value='answer2' id='option-44' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 2 (C)</label>
+                            <span id='result-44'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-45' style='padding: 10px;'>
+                            <label for='option-45' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option9' value='answer3' id='option-45' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 3</label>
+                            <span id='result-45'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-46' style='padding: 10px;'>
+                            <label for='option-46' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option9' value='answer4' id='option-46' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 4<label>
+                            <span id='result-46'></span>
+                        </div>
+                        <hr />
+                        <button type='button' onclick='displayAnswer9()' style='width: 130px; height: 60px; border-radius: 3px;'>Submit</button>
+                        </div>
+                        <a id='showanswer9'></a>
+                    </td>
+                    <td> <!--Question 10-->
+                        <div style='transform: scale(0.65); position: relative; top: -100px;'>
+                        <h3>Question 10</h3>
+                        <p>Choose 1 answer</p>
+                        <hr />
+                        
+                        <div id='block-47' style='padding: 10px;'>
+                            <label for='option-47' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option10' value='Your mom' id='option-47' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 1</label>
+                            <span id='result-47'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-48' style='padding: 10px;'>
+                            <label for='option-48' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option10' value='My dad' id='option-48' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 2</label>
+                            <span id='result-48'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-49' style='padding: 10px;'>
+                            <label for='option-49' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option10' value='Ben Franklin' id='option-49' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 3</label>
+                            <span id='result-49'></span>
+                        </div>
+                        <hr />
+                        
+                        <div id='block-50' style='padding: 10px;'>
+                            <label for='option-50' style=' padding: 5px; font-size: 2.5rem;'>
+                            <input type='radio' name='option10' value='Mrs Milesky' id='option-50' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Answer 4 (C)<label>
+                            <span id='result-50'></span>
+                        </div>
+                        <hr />
+                        <button type='button' onclick='displayAnswer10()' style='width: 130px; height: 60px; border-radius: 3px;'>Submit</button>
+                        </div>
+                        <a id='showanswer10'></a>
+                    </td>
+                </tr>
+            </table>
         </div>
     </section>
     <!-- end article content -->
@@ -300,12 +644,19 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script>
-        //    The function evaluates the answer and displays result
+        let questCount = 0;
+        let score = 0;
+
+        // QUESTION 1
+
+
         function displayAnswer1() {
+            questCount++;
           if (document.getElementById('option-11').checked) {
             document.getElementById('block-11').style.border = '3px solid limegreen'
             document.getElementById('result-11').style.color = 'limegreen'
             document.getElementById('result-11').innerHTML = 'Correct!'
+            score++;
           }
           if (document.getElementById('option-12').checked) {
             document.getElementById('block-12').style.border = '3px solid red'
@@ -339,6 +690,405 @@
             document.getElementById('result-11').style.color = 'limegreen'
             document.getElementById('result-11').innerHTML = 'Correct!'
             document.getElementById('showanswer1').removeChild(showAnswer1)
+          })
+        }
+
+        //QUESTION 2
+
+
+        function displayAnswer2() {
+            questCount++;
+          if (document.getElementById('option-15').checked) {
+            document.getElementById('block-15').style.border = '3px solid red'
+            document.getElementById('result-15').style.color = 'red'
+            document.getElementById('result-15').innerHTML = 'Incorrect!'
+            showCorrectAnswer2()
+          }
+          if (document.getElementById('option-16').checked) {
+            document.getElementById('block-16').style.border = '3px solid red'
+            document.getElementById('result-16').style.color = 'red'
+            document.getElementById('result-16').innerHTML = 'Incorrect!'
+            showCorrectAnswer2()
+          }
+          if (document.getElementById('option-17').checked) {
+            document.getElementById('block-17').style.border = '3px solid limegreen'
+            document.getElementById('result-17').style.color = 'limegreen'
+            document.getElementById('result-17').innerHTML = 'Correct!'
+            score++;
+            
+          }
+          if (document.getElementById('option-18').checked) {
+            document.getElementById('block-18').style.border = '3px solid red'
+            document.getElementById('result-18').style.color = 'red'
+            document.getElementById('result-18').innerHTML = 'Incorrect!'
+            showCorrectAnswer2()
+          }
+        }
+        function showCorrectAnswer2() {
+          let showAnswer2 = document.createElement('p')
+          showAnswer2.innerHTML = 'Show Correct Answer'
+          showAnswer2.style.position = 'relative'
+          showAnswer2.style.top = '-180px'
+          showAnswer2.style.fontSize = '1.75rem'
+          document.getElementById('showanswer2').appendChild(showAnswer2)
+          showAnswer2.addEventListener('click', () => {
+            document.getElementById('block-17').style.border = '3px solid limegreen'
+            document.getElementById('result-17').style.color = 'limegreen'
+            document.getElementById('result-17').innerHTML = 'Correct!'
+            document.getElementById('showanswer2').removeChild(showAnswer2)
+          })
+        }
+
+        //QUESTION 3
+
+
+        function displayAnswer3() {
+            questCount++;
+          if (document.getElementById('option-19').checked) {
+            document.getElementById('block-19').style.border = '3px solid red'
+            document.getElementById('result-19').style.color = 'red'
+            document.getElementById('result-19').innerHTML = 'Incorrect!'
+            showCorrectAnswer3()
+          }
+          if (document.getElementById('option-20').checked) {
+            document.getElementById('block-20').style.border = '3px solid limegreen'
+            document.getElementById('result-20').style.color = 'limegreen'
+            document.getElementById('result-20').innerHTML = 'Correct!'
+            score++;
+            
+          }
+          if (document.getElementById('option-21').checked) {
+            document.getElementById('block-21').style.border = '3px solid red'
+            document.getElementById('result-21').style.color = 'red'
+            document.getElementById('result-21').innerHTML = 'Incorrect!'
+            showCorrectAnswer3()
+          }
+          if (document.getElementById('option-22').checked) {
+            document.getElementById('block-22').style.border = '3px solid red'
+            document.getElementById('result-22').style.color = 'red'
+            document.getElementById('result-22').innerHTML = 'Incorrect!'
+            showCorrectAnswer3()
+          }
+        }
+        function showCorrectAnswer3() {
+          let showAnswer3 = document.createElement('p')
+          showAnswer3.innerHTML = 'Show Correct Answer'
+          showAnswer3.style.position = 'relative'
+          showAnswer3.style.top = '-180px'
+          showAnswer3.style.fontSize = '1.75rem'
+          document.getElementById('showanswer3').appendChild(showAnswer3)
+          showAnswer3.addEventListener('click', () => {
+            document.getElementById('block-20').style.border = '3px solid limegreen'
+            document.getElementById('result-20').style.color = 'limegreen'
+            document.getElementById('result-20').innerHTML = 'Correct!'
+            document.getElementById('showanswer3').removeChild(showAnswer3)
+          })
+        }
+
+        //QUESTION 4
+
+        function displayAnswer4() {
+            questCount++;
+          if (document.getElementById('option-23').checked) {
+            document.getElementById('block-23').style.border = '3px solid red'
+            document.getElementById('result-23').style.color = 'red'
+            document.getElementById('result-23').innerHTML = 'Incorrect!'
+            showCorrectAnswer4()
+          }
+          if (document.getElementById('option-24').checked) {
+            document.getElementById('block-24').style.border = '3px solid limegreen'
+            document.getElementById('result-24').style.color = 'limegreen'
+            document.getElementById('result-24').innerHTML = 'Correct!'
+            score++;
+          }
+          if (document.getElementById('option-25').checked) {
+            document.getElementById('block-25').style.border = '3px solid red'
+            document.getElementById('result-25').style.color = 'red'
+            document.getElementById('result-25').innerHTML = 'Incorrect!'
+            showCorrectAnswer4()
+          }
+          if (document.getElementById('option-26').checked) {
+            document.getElementById('block-26').style.border = '3px solid red'
+            document.getElementById('result-26').style.color = 'red'
+            document.getElementById('result-26').innerHTML = 'Incorrect!'
+            showCorrectAnswer4()
+          }
+        }
+        function showCorrectAnswer4() {
+          let showAnswer4 = document.createElement('p')
+          showAnswer4.innerHTML = 'Show Correct Answer'
+          showAnswer4.style.position = 'relative'
+          showAnswer4.style.top = '-180px'
+          showAnswer4.style.fontSize = '1.75rem'
+          document.getElementById('showanswer4').appendChild(showAnswer4)
+          showAnswer4.addEventListener('click', () => {
+            document.getElementById('block-24').style.border = '3px solid limegreen'
+            document.getElementById('result-24').style.color = 'limegreen'
+            document.getElementById('result-24').innerHTML = 'Correct!'
+            document.getElementById('showanswer4').removeChild(showAnswer4)
+          })
+        }
+
+        //QUESTION 5
+
+        function displayAnswer5() {
+            questCount++;
+          if (document.getElementById('option-27').checked) {
+            document.getElementById('block-27').style.border = '3px solid red'
+            document.getElementById('result-27').style.color = 'red'
+            document.getElementById('result-27').innerHTML = 'Incorrect!'
+            showCorrectAnswer5()
+          }
+          if (document.getElementById('option-28').checked) {
+            document.getElementById('block-28').style.border = '3px solid red'
+            document.getElementById('result-28').style.color = 'red'
+            document.getElementById('result-28').innerHTML = 'Inorrect!'
+            showCorrectAnswer5()
+            
+          }
+          if (document.getElementById('option-29').checked) {
+            document.getElementById('block-29').style.border = '3px solid red'
+            document.getElementById('result-29').style.color = 'red'
+            document.getElementById('result-29').innerHTML = 'Incorrect!'
+            showCorrectAnswer5()
+          }
+          if (document.getElementById('option-30').checked) {
+            document.getElementById('block-30').style.border = '3px solid limegreen'
+            document.getElementById('result-30').style.color = 'limegreen'
+            document.getElementById('result-30').innerHTML = 'Correct!'
+            score++;
+          }
+        }
+        function showCorrectAnswer5() {
+          let showAnswer5 = document.createElement('p')
+          showAnswer5.innerHTML = 'Show Correct Answer'
+          showAnswer5.style.position = 'relative'
+          showAnswer5.style.top = '-180px'
+          showAnswer5.style.fontSize = '1.75rem'
+          document.getElementById('showanswer5').appendChild(showAnswer5)
+          showAnswer5.addEventListener('click', () => {
+            document.getElementById('block-30').style.border = '3px solid limegreen'
+            document.getElementById('result-30').style.color = 'limegreen'
+            document.getElementById('result-30').innerHTML = 'Correct!'
+            document.getElementById('showanswer5').removeChild(showAnswer5)
+          })
+        }
+
+        //QUESTION 6
+
+        function displayAnswer6() {
+            questCount++;
+          if (document.getElementById('option-31').checked) {
+            document.getElementById('block-31').style.border = '3px solid limegreen'
+            document.getElementById('result-31').style.color = 'limegreen'
+            document.getElementById('result-31').innerHTML = 'Correct!'
+            score++;
+          }
+          if (document.getElementById('option-32').checked) {
+            document.getElementById('block-32').style.border = '3px solid red'
+            document.getElementById('result-32').style.color = 'red'
+            document.getElementById('result-32').innerHTML = 'Incorrect!'
+            showCorrectAnswer6()
+            
+          }
+          if (document.getElementById('option-33').checked) {
+            document.getElementById('block-33').style.border = '3px solid red'
+            document.getElementById('result-33').style.color = 'red'
+            document.getElementById('result-33').innerHTML = 'Incorrect!'
+            showCorrectAnswer6()
+          }
+          if (document.getElementById('option-34').checked) {
+            document.getElementById('block-34').style.border = '3px solid red'
+            document.getElementById('result-34').style.color = 'red'
+            document.getElementById('result-34').innerHTML = 'Incorrect!'
+            showCorrectAnswer6()
+          }
+        }
+        function showCorrectAnswer6() {
+          let showAnswer6 = document.createElement('p')
+          showAnswer6.innerHTML = 'Show Correct Answer'
+          showAnswer6.style.position = 'relative'
+          showAnswer6.style.top = '-180px'
+          showAnswer6.style.fontSize = '1.75rem'
+          document.getElementById('showanswer6').appendChild(showAnswer6)
+          showAnswer6.addEventListener('click', () => {
+            document.getElementById('block-31').style.border = '3px solid limegreen'
+            document.getElementById('result-31').style.color = 'limegreen'
+            document.getElementById('result-31').innerHTML = 'Correct!'
+            document.getElementById('showanswer6').removeChild(showAnswer6)
+          })
+        }
+
+        //QUESTION 7
+
+        function displayAnswer7() {
+            questCount++;
+          if (document.getElementById('option-35').checked) {
+            document.getElementById('block-35').style.border = '3px solid limegreen'
+            document.getElementById('result-35').style.color = 'limegreen'
+            document.getElementById('result-35').innerHTML = 'Correct!'
+            score++;
+          }
+          if (document.getElementById('option-36').checked) {
+            document.getElementById('block-36').style.border = '3px solid red'
+            document.getElementById('result-36').style.color = 'red'
+            document.getElementById('result-36').innerHTML = 'Incorrect!'
+            showCorrectAnswer7()
+            
+          }
+          if (document.getElementById('option-37').checked) {
+            document.getElementById('block-37').style.border = '3px solid red'
+            document.getElementById('result-37').style.color = 'red'
+            document.getElementById('result-37').innerHTML = 'Incorrect!'
+            showCorrectAnswer7()
+          }
+          if (document.getElementById('option-38').checked) {
+            document.getElementById('block-38').style.border = '3px solid red'
+            document.getElementById('result-38').style.color = 'red'
+            document.getElementById('result-38').innerHTML = 'Incorrect!'
+            showCorrectAnswer7()
+          }
+        }
+        function showCorrectAnswer7() {
+          let showAnswer7 = document.createElement('p')
+          showAnswer7.innerHTML = 'Show Correct Answer'
+          showAnswer7.style.position = 'relative'
+          showAnswer7.style.top = '-180px'
+          showAnswer7.style.fontSize = '1.75rem'
+          document.getElementById('showanswer7').appendChild(showAnswer7)
+          showAnswer7.addEventListener('click', () => {
+            document.getElementById('block-35').style.border = '3px solid limegreen'
+            document.getElementById('result-35').style.color = 'limegreen'
+            document.getElementById('result-35').innerHTML = 'Correct!'
+            document.getElementById('showanswer7').removeChild(showAnswer7)
+          })
+        }
+
+        //QUESTION 8
+
+        function displayAnswer8() {
+          if (document.getElementById('option-39').checked) {
+            document.getElementById('block-39').style.border = '3px solid red'
+            document.getElementById('result-39').style.color = 'red'
+            document.getElementById('result-39').innerHTML = 'Incorrect!'
+            showCorrectAnswer8()
+          }
+          if (document.getElementById('option-40').checked) {
+            document.getElementById('block-40').style.border = '3px solid red'
+            document.getElementById('result-40').style.color = 'red'
+            document.getElementById('result-40').innerHTML = 'Incorrect!'
+            showCorrectAnswer8()
+            
+          }
+          if (document.getElementById('option-41').checked) {
+            document.getElementById('block-41').style.border = '3px solid limegreen'
+            document.getElementById('result-41').style.color = 'limegreen'
+            document.getElementById('result-41').innerHTML = 'Correct!'
+          }
+          if (document.getElementById('option-42').checked) {
+            document.getElementById('block-42').style.border = '3px solid red'
+            document.getElementById('result-42').style.color = 'red'
+            document.getElementById('result-42').innerHTML = 'Incorrect!'
+            showCorrectAnswer8()
+          }
+        }
+        function showCorrectAnswer8() {
+          let showAnswer8 = document.createElement('p')
+          showAnswer8.innerHTML = 'Show Correct Answer'
+          showAnswer8.style.position = 'relative'
+          showAnswer8.style.top = '-180px'
+          showAnswer8.style.fontSize = '1.75rem'
+          document.getElementById('showanswer8').appendChild(showAnswer8)
+          showAnswer8.addEventListener('click', () => {
+            document.getElementById('block-41').style.border = '3px solid limegreen'
+            document.getElementById('result-41').style.color = 'limegreen'
+            document.getElementById('result-41').innerHTML = 'Correct!'
+            document.getElementById('showanswer8').removeChild(showAnswer8)
+          })
+        }
+
+        //QUESTION 9
+
+        function displayAnswer9() {
+          if (document.getElementById('option-43').checked) {
+            document.getElementById('block-43').style.border = '3px solid red'
+            document.getElementById('result-43').style.color = 'red'
+            document.getElementById('result-43').innerHTML = 'Incorrect!'
+            showCorrectAnswer9()
+          }
+          if (document.getElementById('option-44').checked) {
+            document.getElementById('block-44').style.border = '3px solid limegreen'
+            document.getElementById('result-44').style.color = 'limegreen'
+            document.getElementById('result-44').innerHTML = 'Correct!'
+            
+          }
+          if (document.getElementById('option-45').checked) {
+            document.getElementById('block-45').style.border = '3px solid red'
+            document.getElementById('result-45').style.color = 'red'
+            document.getElementById('result-45').innerHTML = 'Incorrect!'
+            showCorrectAnswer9()
+          }
+          if (document.getElementById('option-46').checked) {
+            document.getElementById('block-46').style.border = '3px solid red'
+            document.getElementById('result-46').style.color = 'red'
+            document.getElementById('result-46').innerHTML = 'Incorrect!'
+            showCorrectAnswer9()
+          }
+        }
+        function showCorrectAnswer9() {
+          let showAnswer9 = document.createElement('p')
+          showAnswer9.innerHTML = 'Show Correct Answer'
+          showAnswer9.style.position = 'relative'
+          showAnswer9.style.top = '-180px'
+          showAnswer9.style.fontSize = '1.75rem'
+          document.getElementById('showanswer9').appendChild(showAnswer9)
+          showAnswer9.addEventListener('click', () => {
+            document.getElementById('block-44').style.border = '3px solid limegreen'
+            document.getElementById('result-44').style.color = 'limegreen'
+            document.getElementById('result-44').innerHTML = 'Correct!'
+            document.getElementById('showanswer9').removeChild(showAnswer9)
+          })
+        }
+
+        //QUESTION 10
+
+        function displayAnswer10() {
+          if (document.getElementById('option-47').checked) {
+            document.getElementById('block-47').style.border = '3px solid red'
+            document.getElementById('result-47').style.color = 'red'
+            document.getElementById('result-47').innerHTML = 'Incorrect!'
+            showCorrectAnswer10()
+          }
+          if (document.getElementById('option-48').checked) {
+            document.getElementById('block-48').style.border = '3px solid red'
+            document.getElementById('result-48').style.color = 'red'
+            document.getElementById('result-48').innerHTML = 'Incorrect!'
+            showCorrectAnswer10()
+          }
+          if (document.getElementById('option-49').checked) {
+            document.getElementById('block-49').style.border = '3px solid red'
+            document.getElementById('result-49').style.color = 'red'
+            document.getElementById('result-49').innerHTML = 'Incorrect!'
+            showCorrectAnswer10()
+          }
+          if (document.getElementById('option-50').checked) {
+            document.getElementById('block-50').style.border = '3px solid limegreen'
+            document.getElementById('result-50').style.color = 'limgreen'
+            document.getElementById('result-50').innerHTML = 'Correct!'
+          }
+        }
+        function showCorrectAnswer10() {
+          let showAnswer10 = document.createElement('p')
+          showAnswer10.innerHTML = 'Show Correct Answer'
+          showAnswer10.style.position = 'relative'
+          showAnswer10.style.top = '-180px'
+          showAnswer10.style.fontSize = '1.75rem'
+          document.getElementById('showanswer10').appendChild(showAnswer10)
+          showAnswer10.addEventListener('click', () => {
+            document.getElementById('block-50').style.border = '3px solid limegreen'
+            document.getElementById('result-50').style.color = 'limegreen'
+            document.getElementById('result-50').innerHTML = 'Correct!'
+            document.getElementById('showanswer10').removeChild(showAnswer10)
           })
         }
       </script>
