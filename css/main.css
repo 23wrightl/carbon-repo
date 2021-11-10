@@ -2409,7 +2409,12 @@ img {vertical-align: middle;}
 }
 
 .text1title:hover{
-    color: #959595;
+    color: #33a242;
+    background-color:#95959562;
+    padding:5px;
+    border-radius:5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Next & previous buttons */
@@ -2484,6 +2489,87 @@ img {vertical-align: middle;}
 }
 .article-list{
     padding-left:30px;
+}
+#game-bkgd{
+    background-color:rgb(199, 232, 243);
+    height:85%;
+}
+#game-footer{
+    background-color:rgb(255, 124, 211);
+    border-top: white solid 2px;
+    height:15%;
+    text-align:center;
+    padding-top:1.5%;
+}
+#game{
+    height:600px;
+    overflow: hidden;
+}
+.upgrade-button{
+    display:inline-block;
+    margin-left: 10px;
+    margin-right:10px;
+    background-color: white;
+    color:gray;
+    border:white;
+}
+#energy-button{
+    float:right;
+    background-color: rgb(247, 247, 162);
+    color:gray;
+    border:white solid 5px;
+    margin-top:10px;
+    margin-right:10px;
+}
+.exit-button{
+    float:right;
+    width:10px;
+    height:20px;
+    text-align:center;
+    background-color: #00000000;
+    border:#00000000;
+}
+.exit-button:hover{
+    float:right;
+    width:10px;
+    height:20px;
+    text-align:center;
+    background-color: #00000000;
+    border:#00000000;
+    color:#4f4f4f;
+}
+.upgrade-box{
+    margin:auto;
+    width:50%;
+    height:75%;
+}
+.upgrade-header{
+    font-size: 30pt;
+    text-align:center;
+}
+.upgrade-info{
+    text-align:center;
+    background-color:white;
+    color:#91f39e;
+    margin-left:100px;
+    margin-right:100px;
+    padding:15px;
+}
+.upgrade-cost{
+    text-align:center;
+    font-size:10pt;
+}
+#wind-power-upgrade{
+    background-color:#91f39e;
+}
+.final-upgrade-button{
+    color:#91f39e;
+    background-color: white;
+    border:#00000000;
+    text-align:center;
+}
+.final-upgrade-box{
+    text-align:center;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2667,7 +2753,7 @@ img {vertical-align: middle;}
     display: block;
 }
 
-.item-folio__thumb a::before {
+.item-folio__thumb a::before{
     display: block;
     background-color: rgba(0, 0, 0, 0.8);
     content: "";
@@ -2684,7 +2770,7 @@ img {vertical-align: middle;}
 }
 
 .item-folio__thumb a::after {
-    content: "+";
+    content:"+";
     font-family: georgia, serif;
     font-size: 2.7rem;
     display: block;
