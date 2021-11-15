@@ -10,7 +10,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>EnviroAge Articles</title>
+    <title>EnviroAge Energy Tycoon Game</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -111,26 +111,62 @@
             <br>
             <div id="game">
                 <div id="game-bkgd">
-                    <button id="energy-button">Energy</button>
+                    <div id="energy-button"><div id="energy-num">1</div>Energy</div>
                     <br><br><br>
                     <div class="upgrade-box" id="wind-power-upgrade">
-                        <button class="exit-button">x</button>
+                        <button class="exit-button" id="exit-button-wind" onclick="hide()">x</button>
                         <br>
                         <br>
                         <div class="upgrade-header">Wind Power</div>
                         <br>
-                        <div class="upgrade-info">Description of wind power</div>
+                        <div class="upgrade-info" id="wind-update-info">Description of wind power</div>
                         <br>
                         <div class="upgrade-cost">By upgrading wind power, you increase your energy by 5 points per second</div>
                         <br>
-                        <div class="final-upgrade-box"><button class="final-upgrade-button">UPGRADE</button></div>
+                        <div class="final-upgrade-box"><button class="final-upgrade-button" id="upgrade-button-wind">UPGRADE</button></div>
+                    </div>
+                    <div class="upgrade-box" id="solar-power-upgrade">
+                        <button class="exit-button" id="exit-button-wind" onclick="hide()">x</button>
+                        <br>
+                        <br>
+                        <div class="upgrade-header">Solar Power</div>
+                        <br>
+                        <div class="upgrade-info" id="solar-update-info">Description of solar power</div>
+                        <br>
+                        <div class="upgrade-cost">By upgrading solar power, you increase your energy by 2 points per second</div>
+                        <br>
+                        <div class="final-upgrade-box"><button class="final-upgrade-button" id="upgrade-button-solar">UPGRADE</button></div>
+                    </div>
+                    <div class="upgrade-box" id="nuclear-power-upgrade">
+                        <button class="exit-button" id="exit-button-wind" onclick="hide()">x</button>
+                        <br>
+                        <br>
+                        <div class="upgrade-header">Nuclear Power</div>
+                        <br>
+                        <div class="upgrade-info" id="nuclear-update-info">Description of nuclear power</div>
+                        <br>
+                        <div class="upgrade-cost">By upgrading nuclear power, you multiply your energy points by 2 for second</div>
+                        <br>
+                        <div class="final-upgrade-box"><button class="final-upgrade-button" id="upgrade-button-nuclear">UPGRADE</button></div>
+                    </div>
+                    <div class="upgrade-box" id="hydro-power-upgrade">
+                        <button class="exit-button" id="exit-button-wind" onclick="hide()">x</button>
+                        <br>
+                        <br>
+                        <div class="upgrade-header">Hydropower</div>
+                        <br>
+                        <div class="upgrade-info" id="hydro-update-info">Description of hydropower</div>
+                        <br>
+                        <div class="upgrade-cost">By upgrading hydropower, you increase your energy by 5 points per second</div>
+                        <br>
+                        <div class="final-upgrade-box"><button class="final-upgrade-button" id="upgrade-button-hydro">UPGRADE</button></div>
                     </div>
                 </div>
                 <div id="game-footer">
-                    <button class="upgrade-button">Wind Power</button>
-                    <button class="upgrade-button">Solar Power</button>
-                    <button class="upgrade-button">Nuclear Power</button>
-                    <button class="upgrade-button">Hydropower</button>
+                    <button class="upgrade-button"  onclick="showWind()">Wind Power</button>
+                    <button class="upgrade-button"  onclick="showSolar()">Solar Power</button>
+                    <button class="upgrade-button"  onclick="showNuclear()">Nuclear Power</button>
+                    <button class="upgrade-button"  onclick="showHydro()">Hydropower</button>
                 </div>
             </div>
         </div>
@@ -245,6 +281,63 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        function showWind(){
+            if(document.getElementById('solar-power-upgrade').style.display=="block"){
+                hide();
+            }
+            if(document.getElementById('nuclear-power-upgrade').style.display=="block"){
+                hide();
+            }
+            if(document.getElementById('hydro-power-upgrade').style.display=="block"){
+                hide();
+            }
+            document.getElementById('wind-power-upgrade').style.display="block";
+        }
+        function showSolar(){
+            if(document.getElementById('wind-power-upgrade').style.display=="block"){
+                hide();
+            }
+            if(document.getElementById('nuclear-power-upgrade').style.display=="block"){
+                hide();
+            }
+            if(document.getElementById('hydro-power-upgrade').style.display=="block"){
+                hide();
+            }
+            document.getElementById('solar-power-upgrade').style.display="block";
+        }
+        function showNuclear(){
+            if(document.getElementById('solar-power-upgrade').style.display=="block"){
+                hide();
+            }
+            if(document.getElementById('wind-power-upgrade').style.display=="block"){
+                hide();
+            }
+            if(document.getElementById('hydro-power-upgrade').style.display=="block"){
+                hide();
+            }
+            document.getElementById('nuclear-power-upgrade').style.display="block";
+        }
+        function showHydro(){
+            if(document.getElementById('solar-power-upgrade').style.display=="block"){
+                hide();
+            }
+            if(document.getElementById('nuclear-power-upgrade').style.display=="block"){
+                hide();
+            }
+            if(document.getElementById('wind-power-upgrade').style.display=="block"){
+                hide();
+            }
+            document.getElementById('hydro-power-upgrade').style.display="block";
+        }
+        function hide(){
+            document.getElementById('wind-power-upgrade').style.display="none";
+            document.getElementById('solar-power-upgrade').style.display="none";
+            document.getElementById('nuclear-power-upgrade').style.display="none";
+            document.getElementById('hydro-power-upgrade').style.display="none";
+
+        }
+    </script>
 
 </body>
 
