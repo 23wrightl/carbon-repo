@@ -2492,6 +2492,9 @@ img {vertical-align: middle;}
 .article-list{
     padding-left:30px;
 }
+.biggest-list:before{
+    content: ' \00BB';
+}
 #game-bkgd{
     background-color:rgb(199, 232, 243);
     height:85%;

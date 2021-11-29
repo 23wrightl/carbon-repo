@@ -43,7 +43,7 @@
     <header class="s-header">
         <div class="header-logo">
             <a class="site-logo" href="index.html">
-                <img src="images/enviro-age-logo-white.png" alt="Homepage">
+                <img src="images/enviro-age-logo-white.png" alt="Homepage" id="site-logo-img" style="transition: 0.2s;width:200px;">
             </a>
         </div>
 
@@ -252,26 +252,21 @@
                 <div class="service-text">
                     <h3 class="h2">Learning</h3>
                     <div class="slideshow-container">
-                        <div class="mySlides2" onclick="window.open('articlebase.html','_blank')">
+                        <div class="mySlides2" onclick="window.open('biggestproducers.html','_blank')">
                             <h5 class="text1title">Biggest Producers of Carbon Emissions</h5>
-                            <p class="text1">We all know that we release a lot of carbon when we run drive our cars. But 
-                                what else produces carbon emissions? And what can we do to reduce it?
+                            <p class="text1">We all know that we release a lot of carbon when we run or drive our cars. But what else produces carbon emissions? And what can we do to reduce it?
                             </p>
                         </div>
                       
-                        <div class="mySlides2" onclick="window.open('articlebase.html','_blank')">
+                        <div class="mySlides2" onclick="window.open('reducehome.html','_blank')">
                             <h5 class="text1title">What Can You Do to Reduce Your Carbon Footprint at Home?</h5>
-                            <p class="text1">We understand that life is busy and you can't always join a big campaign or 
-                                work with these huge organizations to make world-wide change. So, here is some simple changes 
-                                at home you can make.
+                            <p class="text1">Life is busy and it’s hard to find time to join an active campaign or work with huge organizations to achieve global change. So, what can we do at home to achieve local change? How much would our efforts make a difference? Why should we care?                                
                             </p>
                         </div>
 
-                        <div class="mySlides2" onclick="window.open('articlebase.html','_blank')">
+                        <div class="mySlides2" onclick="window.open('traveling.html','_blank')">
                             <h5 class="text1title">How Can Travelling Hurt the Environment Around You?</h5>
-                            <p class="text1">We all take nice vacations to the beach or the mountains, but have 
-                                you ever considered how your roadtrip or quick flight to get there is hurting 
-                                the environment?
+                            <p class="text1">We all take pleasant vacations to the beach or the mountains, but have you ever considered how the road trip or short flight there is hurting the environment?
                             </p>
                         </div>
 
@@ -279,6 +274,12 @@
                             <h5 class="text1title">Local Organizations: Taking the Leap</h5>
                             <p class="text1">There are many activism groups out there to work to help reduce the world's 
                                 carbon footprint. Maybe it is worthwhile to join one too?
+                            </p>
+                        </div>
+
+                        <div class="mySlides2" onclick="window.open('articlebase.html','_blank')">
+                            <h5 class="text1title">Downsides of Digging Digital Currency</h5>
+                            <p class="text1">Null
                             </p>
                         </div>
                       
@@ -312,13 +313,13 @@
                     <div class="slideshow-container">
                         <div class="mySlides3" onclick="window.open('https://teamtrees.org/','_blank')">
                             <h5 class="text1title">Team Trees</h5>
-                            <p class="text1">#teamtrees is a world-wide organization that plants one tree for every $1 donated! They have planeted 9 million trees already!
+                            <p class="text1">#teamtrees is a world-wide organization that plants one tree for every dollar donated! They have planeted 9 million trees already and are working toward 20 million trees!
                             </p>
                         </div>
                       
-                        <div class="mySlides3" onclick="window.open('https://theoceancleanup.com/','_blank')">
-                            <h5 class="text1title">The Ocean Cleanup</h5>
-                            <p class="text1">In a competition between Mark Rober and Mr Beast, this organization works to clean the plastic and waste from our oceans. Mr Beast participates in beach cleanups, and Mark Rober works to use a system of nets to grab trash from flowing waters.
+                        <div class="mySlides3" onclick="window.open('https://teamseas.org/','_blank')">
+                            <h5 class="text1title">Team Seas</h5>
+                            <p class="text1">In a competition between Mark Rober and Mr Beast, this organization works to clean the plastic and waste from oceans. Mr Beast participates in beach cleanups, and Mark Rober works to use a system of nets to grab trash from flowing waters using The Ocean Cleaup's Technology.
                             </p>
                         </div>
                       
@@ -602,8 +603,8 @@
             <div class="col-full">
                 <div class="clients">
                     
-                    <a href="#0" title="" class="clients__slide"><img src="images/power-clean-future-black.png" style="height:100px"/></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/zoe-logo-black.png" style="height:100px"/></a>
+                    <a href="https://www.poweracleanfuture.org/" title="" class="clients__slide"><img src="images/power-clean-future-black.png" style="height:100px"/></a>
+                    <a href="https://www.instagram.com/matrixomal/" title="" class="clients__slide"><img src="images/zoe-logo-black.png" style="height:100px"/></a>
                     
                      
                 </div> <!-- end clients -->
@@ -699,16 +700,16 @@
                 <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
                     <fieldset>
                     <div class="form-field">
-                        <input type="email" id="contactEmail" placeholder="Email" value="" required="" aria-required="true" class="full-width" for=email_input_id>
+                        <input type="email" id="contactEmail" placeholder="Email" value="Email" required="" aria-required="true" class="full-width" for=email_input_id>
                     </div>
                     <div class="form-field">
                         <input name="contactName" type="text" id="owner" placeholder="Full Name" value="" minlength="2" required="" aria-required="true" class="full-width">
                     </div>
                     <div class="form-field">
-                        <input type="number" id="cardNumber" placeholder="Card Number" value="" required="" aria-required="true" class="full-width">
+                        <input type="number" id="cardNumber" placeholder="Card Number" value="Card Number" required="" aria-required="true" class="full-width">
                     </div>
                     <div class="form-field">
-                        <input name="ccv" type="number" id="ccv" placeholder="CCV" value="" class="full-width">
+                        <input name="ccv" type="number" id="ccv" placeholder="CCV" value="CCV" class="full-width">
                     </div>
                     <div class="form-field">
                         <select>
@@ -949,6 +950,18 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.payform.min.js" charset="utf-8"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+        // When the user scrolls down 50px from the top of the document, resize the header's font size
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("site-logo-img").style.width = "150px";
+          } else {
+            document.getElementById("site-logo-img").style.width = "200px";
+          }
+        }
+        </script>
     </body>
 
 </html>
