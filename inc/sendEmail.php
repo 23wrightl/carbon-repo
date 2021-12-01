@@ -20,22 +20,23 @@ if($_POST) {
         $error['email'] = "Please enter a valid email address.";
     }
     // Check Message
-    if (strlen($contact_message) < 15) {
-        $error['message'] = "Please enter your message. It should have at least 15 characters.";
+    if (strlen($contact_message) < 1) {
+        $error['message'] = "Please enter your donation amount. It should have at least 3 characters.";
     }
     // Subject
     if ($subject == '') { $subject = "Contact Form Submission"; }
 
 
     // Set Message
-    $message .= "Email from: " . $name . "<br />";
-    $message .= "Email address: " . $email . "<br />";
-    $message .= "Message: <br />";
+    $message .= "Thank you for your donation! <br />";
+    $message .= "Email from: Enviroage <br />";
+    $message .= "Something Wrong? Email Us: " . $siteOwnersEmail . "<br />";
+    $message .= "You made a donation of: $<br />";
     $message .= $contact_message;
-    $message .= "<br /> ----- <br /> This email was sent from your site's contact form. <br />";
+    $message .= "<br /> ----- <br /> This email was sent from enviroage.com. If you have any issues, please email donation@enviroage.com. Thank you for your contribution to the fight agaist carbon emissions. <br />";
 
     // Set From: header
-    $from =  $name . " <" . $email . ">";
+    $from =  "Enviroage Donations" . " <" . $siteOwnersEmail . ">";
 
     // Email Headers
     $headers = "From: " . $from . "\r\n";
@@ -47,9 +48,9 @@ if($_POST) {
     if (!$error) {
 
         ini_set("sendmail_from", $siteOwnersEmail); // for windows server
-        $mail = mail($siteOwnersEmail, $subject, $message, $headers);
+        $siteOwnersEmail = mail($email, $subject, $message, $headers);
 
-        if ($mail) { echo "OK"; }
+        if ($email) { echo "OK"; }
         else { echo "Something went wrong. Please try again."; }
         
     } # end if - no validation error
