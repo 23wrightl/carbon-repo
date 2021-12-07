@@ -1,70 +1,59 @@
 ﻿<?php
+require_once("<PATH TO>/inc/sendgrid-php.php");
+// Modify this path to the sendgrid-php.php files inside your inc folder
+use SendGrid\Mail\From;
+use SendGrid\Mail\To;
+use SendGrid\Mail\Mail;
+// these "require" and "use" lines must be at the top of your script
 
-// Replace this with your own email address
-$siteOwnersEmail = 'donation@enviroage.com';
+$sendgridTemplateId = "d-150db486467b4b4e8909cc895386bd23";
+$sendgridApiKey = "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";
 
-
-if($_POST) {
+if($_POST['submitBtn']){
 
     $name = trim(stripslashes($_POST['contactName']));
     $email = trim(stripslashes($_POST['contactEmail']));
-    $subject = trim(stripslashes($_POST['contactSubject']));
-    $contact_message = trim(stripslashes($_POST['contactMessage']));
+    $amount = trim(stripslashes($_POST['donationAmount']));
 
     // Check Name
     if (strlen($name) < 2) {
-        $error['name'] = "Please enter your name.";
+        die("error-name");
     }
+	
     // Check Email
     if (!preg_match('/^[a-z0-9&\'\.\-_\+]+@[a-z0-9\-]+\.([a-z0-9\-]+\.)*+[a-z]{2}/is', $email)) {
-        $error['email'] = "Please enter a valid email address.";
+       die("error-email");
     }
-    // Check Message
-    if (strlen($contact_message) < 1) {
-        $error['message'] = "Please enter your donation amount. It should have at least 3 characters.";
-    }
-    // Subject
-    if ($subject == '') { $subject = "Contact Form Submission"; }
+	
 
-
-    // Set Message
-    $message .= "Thank you for your donation! <br />";
-    $message .= "Email from: Enviroage <br />";
-    $message .= "Something Wrong? Email Us: " . $siteOwnersEmail . "<br />";
-    $message .= "You made a donation of: $<br />";
-    $message .= $contact_message;
-    $message .= "<br /> ----- <br /> This email was sent from enviroage.com. If you have any issues, please email donation@enviroage.com. Thank you for your contribution to the fight agaist carbon emissions. <br />";
-
-    // Set From: header
-    $from =  "Enviroage Donations" . " <" . $siteOwnersEmail . ">";
-
-    // Email Headers
-    $headers = "From: " . $from . "\r\n";
-    $headers .= "Reply-To: ". $email . "\r\n";
-    $headers .= "MIME-Version: 1.0\r\n";
-    $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-
-
-    if (!$error) {
-
-        ini_set("sendmail_from", $siteOwnersEmail); // for windows server
-        $siteOwnersEmail = mail($email, $subject, $message, $headers);
-
-        if ($email) { echo "OK"; }
-        else { echo "Something went wrong. Please try again."; }
-        
-    } # end if - no validation error
-
-    else {
-
-        $response = (isset($error['name'])) ? $error['name'] . "<br /> \n" : null;
-        $response .= (isset($error['email'])) ? $error['email'] . "<br /> \n" : null;
-        $response .= (isset($error['message'])) ? $error['message'] . "<br />" : null;
-        
-        echo $response;
-
-    } # end if - there was a validation error
-
+$from = new From("youremail@gmail.com", "Your Name");
+$to = [
+    new To(
+        $email,
+        $name,
+        [
+            'name' => $name,
+						'donation_amount' => $amount
+        ]
+    )
+];
+	
+$email = new Mail(
+    $from,
+    $to
+);
+$email->setTemplateId($sendgridTemplateId);
+$sendgrid = new \SendGrid($sendgridApiKey);
+	
+try{
+	// use try{} to attempt to send the email.
+	// if the code in this block works, use die() to return a success message to the HTML file
+	$sendgrid->send($email);
+	die("success");
+} catch (Exception $e) {
+    //echo 'Caught exception: '.  $e->getMessage(). "\n";
+		// the above line is helpful for testing and debugging errors
+		die("error-sending");
 }
-
+}
 ?>
