@@ -355,7 +355,7 @@
     
             <div class="col-block service-item" data-aos="fade-up">
                 <div class="service-icon">
-                    <img src="/images/clients/adult-learning-icon.png" style="width:100px; padding-right:20px; padding-left:20px; margin-top:-30px;">
+                    <img src="/images/clients/social-media-icon.png" style="width:80px; padding-right:20px; padding-left:20px; margin-top:-30px;">
                 </div>
                 <div class="service-text" style="height:400px; overflow-y: scroll;">
                     <h3 class="h2">Social Media</h3>
@@ -578,6 +578,9 @@
                     <a href="https://www.instagram.com/matrixomal/" title="" class="clients__slide"><img src="images/zoe-logo-black.png" style="height:100px"/></a>
                     <a href="" title="" class="clients__slide"><img src="images/jamie-logo-color.png" style="width:400px"/></a>
                     <a href="https://www.poweracleanfuture.org/" title="" class="clients__slide"><img src="images/compost-exchange-logo-small-grey.png" style="height:100px"/></a>
+                    <a href="https://www.poweracleanfuture.org/" title="" class="clients__slide"><img src="images/power-clean-future-black.png" style="height:100px"/></a>
+                    <a href="https://www.instagram.com/matrixomal/" title="" class="clients__slide"><img src="images/zoe-logo-black.png" style="height:100px"/></a>
+                    <a href="https://www.poweracleanfuture.org/" title="" class="clients__slide"><img src="images/power-clean-future-black.png" style="height:100px"/></a>
                 </div> <!-- end clients -->
             </div> <!-- end col-full -->
         </div> <!-- end clients-outer -->
@@ -665,7 +668,7 @@
 
                 <h3 class="h6">Make a Donation</h3>
 
-                <form name="donationForm" id="donationForm" method="post" action="" novalidate="novalidate">
+                <form name="donationForm" id="donationForm" method="post" action="inc/sendEmail.php" novalidate="novalidate">
                     <fieldset>
                     <div class="form-field">
                         <input type="email" id="contactEmail" name="contactEmail" placeholder="Email" value="" required="" aria-required="true" class="full-width">
@@ -680,7 +683,7 @@
                         <input name="ccv" type="number" id="ccv" placeholder="CCV" value="CCV" class="full-width">
                     </div>
                     <div class="form-field">
-                        <select>
+                        <select id="month" name="month">
                             <option value="01">January</option>
                             <option value="02">February </option>
                             <option value="03">March</option>
@@ -694,7 +697,7 @@
                             <option value="11">November</option>
                             <option value="12">December</option>
                         </select>
-                        <select>
+                        <select id="date" name="date">
                             <option value="16"> 2016</option>
                             <option value="17"> 2017</option>
                             <option value="18"> 2018</option>
@@ -936,7 +939,7 @@
                 var form_data = $(this).serialize();
 
             $.post( post_url, form_data, function( response ) {
-                // alert(response);
+                    alert(response);
                     switch(response){
                     case "error-name":
                     case "error-email":
@@ -953,34 +956,6 @@
             });
         });
     </script>
-    <script>
-        $(document).ready(function(){
-            $("#donationForm").submit(function(event){
-                event.preventDefault();
-                $(".message-warning").hide();
-                $(".message-success").hide();
-        
-                var post_url = $(this).attr("action");
-                var form_data = $(this).serialize();
-        
-               $.post( post_url, form_data, function( response ) {
-                  // alert(response);
-                     switch(response){
-                       case "error-name":
-                       case "error-email":
-                       case "error-sending":
-                         $(".message-warning").fadeIn();
-                       break;
-        
-                     case "success":
-                       $(".message-warning").fadeIn();
-                       document.getElementById("donationForm").reset();
-                     break;
-                     }
-               });
-            });
-        });
-        </script>
     </body>
 
 </html>

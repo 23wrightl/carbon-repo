@@ -1,5 +1,5 @@
 ﻿<?php
-require_once("<PATH TO>/inc/sendgrid-php.php");
+require_once("sendgrid-php/sendgrid.php");
 // Modify this path to the sendgrid-php.php files inside your inc folder
 use SendGrid\Mail\From;
 use SendGrid\Mail\To;
@@ -26,7 +26,7 @@ if($_POST['submitBtn']){
     }
 	
 
-$from = new From("youremail@gmail.com", "Your Name");
+$from = new From("donation@enviroage.com", "Enviroage");
 $to = [
     new To(
         $email,
