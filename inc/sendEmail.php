@@ -1,5 +1,5 @@
 ﻿<?php
-require_once("sendgrid-php/sendgrid.php");
+require_once("/inc/sendgrid-php/sendgrid.php");
 // Modify this path to the sendgrid-php.php files inside your inc folder
 use SendGrid\Mail\From;
 use SendGrid\Mail\To;
